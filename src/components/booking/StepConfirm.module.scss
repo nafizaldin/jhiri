@@ -1,0 +1,72 @@
+.wrap {
+  text-align: center;
+  padding:    3rem 2rem;
+}
+
+.icon {
+  width:            80px;
+  height:           80px;
+  background:       linear-gradient(135deg, var(--fern), var(--moss));
+  border-radius:    50%;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  margin:           0 auto 2rem;
+  font-size:        2rem;
+  animation:        scaleIn 0.5s 0.2s ease both;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.title {
+  font-family:   var(--font-cormorant), serif;
+  font-size:     2.5rem;
+  font-weight:   300;
+  color:         var(--moss);
+  margin-bottom: 0.8rem;
+}
+
+.sub {
+  font-size:    0.88rem;
+  color:        #777;
+  line-height:  1.8;
+  max-width:    500px;
+  margin:       0 auto 2rem;
+}
+
+.ref {
+  font-family:    var(--font-cormorant), serif;
+  font-size:      1.8rem;
+  color:          var(--gold);
+  letter-spacing: 0.1em;
+  margin:         1rem 0;
+}
+
+.details {
+  background:   var(--cream);
+  border:       1px solid var(--sand);
+  padding:      1.5rem;
+  margin:       2rem 0;
+  text-align:   left;
+}
+
+.detailItem {}
+
+.detailLabel {
+  font-size:      0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color:          #aaa;
+  margin-bottom:  0.3rem;
+}
+
+.detailValue {
+  font-size:   0.9rem;
+  color:       var(--moss);
+  font-weight: 400;
+}
+
+.actions { margin-top: 1rem; }

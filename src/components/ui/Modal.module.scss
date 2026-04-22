@@ -1,0 +1,142 @@
+.overlay {
+  position:        fixed;
+  inset:           0;
+  background:      rgba(10, 18, 12, 0.85);
+  backdrop-filter: blur(8px);
+  z-index:         800;
+  opacity:         0;
+  pointer-events:  none;
+  transition:      opacity 0.4s;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+
+  &.open {
+    opacity:        1;
+    pointer-events: all;
+  }
+}
+
+.modal {
+  background:    var(--cream);
+  max-width:     900px;
+  width:         90%;
+  max-height:    90vh;
+  overflow-y:    auto;
+  position:      relative;
+  transform:     translateY(30px) scale(0.97);
+  transition:    all 0.4s;
+  border-radius: 1px;
+
+  .overlay.open & {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.close {
+  position:        absolute;
+  top:             1.2rem;
+  right:           1.2rem;
+  background:      rgba(45, 61, 46, 0.1);
+  border:          none;
+  width:           36px;
+  height:          36px;
+  border-radius:   50%;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  font-size:       1rem;
+  color:           var(--moss);
+  transition:      all 0.3s;
+  z-index:         2;
+
+  &:hover {
+    background: var(--moss);
+    color:      var(--cream);
+  }
+}
+
+.hero {
+  height:   260px;
+  overflow: hidden;
+  position: relative;
+}
+
+.body {
+  padding: 2.5rem;
+}
+
+.tier {
+  font-size:      0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color:          var(--gold);
+  margin-bottom:  0.4rem;
+}
+
+.name {
+  font-family:   var(--font-cormorant), serif;
+  font-size:     2.4rem;
+  font-weight:   300;
+  color:         var(--moss);
+  margin-bottom: 0.5rem;
+}
+
+.priceRow {
+  display:       flex;
+  align-items:   baseline;
+  gap:           0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-family: var(--font-cormorant), serif;
+  font-size:   2rem;
+  color:       var(--moss);
+}
+
+.per {
+  font-size: 0.78rem;
+  color:     #aaa;
+}
+
+.desc {
+  font-size:     0.88rem;
+  line-height:   1.85;
+  color:         #555;
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  margin-bottom: 1.8rem;
+}
+
+.feature {
+  display:     flex;
+  align-items: center;
+  gap:         0.5rem;
+  font-size:   0.8rem;
+  color:       #555;
+
+  &::before {
+    content:   "✦";
+    color:     var(--gold);
+    font-size: 0.6rem;
+    flex-shrink: 0;
+  }
+}
+
+.bookBtn {
+  width:          100%;
+  padding:        1rem;
+  background:     var(--moss);
+  color:          var(--cream);
+  border:         none;
+  font-family:    var(--font-jost), sans-serif;
+  font-size:      0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition:     background 0.3s;
+
+  &:hover { background: var(--gold); }
+}

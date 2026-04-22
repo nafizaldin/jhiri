@@ -1,0 +1,98 @@
+.grid {
+  display:               grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap:                   3px;
+  height:                430px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+    height:                auto;
+
+    .cell { height: 260px; }
+  }
+}
+
+.cell {
+  overflow:   hidden;
+  position:   relative;
+  cursor:     pointer;
+  background: none;
+  border:     none;
+  padding:    0;
+  text-align: left;
+
+  img { width: 100%; height: 100%; display: block; }
+
+  &:hover {
+    img { transform: scale(1.05) !important; }
+
+    .zoom { opacity: 1; }
+  }
+}
+
+.wide { /* first item spans 2fr — handled by grid */ }
+
+.label {
+  position:        absolute;
+  bottom:          1rem;
+  left:            1rem;
+  background:      rgba(8, 18, 10, 0.72);
+  backdrop-filter: blur(4px);
+  color:           #fff;
+  font-size:       0.65rem;
+  letter-spacing:  0.2em;
+  text-transform:  uppercase;
+  padding:         0.35rem 0.8rem;
+}
+
+.zoom {
+  position:        absolute;
+  top:             1rem;
+  right:           1rem;
+  background:      rgba(8, 18, 10, 0.72);
+  backdrop-filter: blur(4px);
+  color:           #fff;
+  font-size:       0.7rem;
+  padding:         0.3rem 0.6rem;
+  opacity:         0;
+  transition:      opacity 0.3s;
+}
+
+/* ── Quote ─────────────────────────────────────────── */
+.quote {
+  padding:     5rem 4rem;
+  text-align:  center;
+  background:  var(--cream);
+  border-top:  1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+
+  @media (max-width: 960px) { padding: 4rem 2rem; }
+}
+
+.qMark {
+  font-family:   var(--font-cormorant), serif;
+  font-size:     7rem;
+  line-height:   0.4;
+  color:         var(--mist);
+  display:       block;
+  margin-bottom: 1.2rem;
+}
+
+.qText {
+  font-family: var(--font-cormorant), serif;
+  font-size:   clamp(1.4rem, 3vw, 2.4rem);
+  font-style:  italic;
+  font-weight: 300;
+  color:       var(--moss);
+  max-width:   720px;
+  margin:      0 auto;
+  line-height: 1.55;
+}
+
+.qAttr {
+  margin-top:     1.5rem;
+  font-size:      0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color:          var(--gold);
+}

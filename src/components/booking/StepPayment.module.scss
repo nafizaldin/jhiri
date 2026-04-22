@@ -1,0 +1,78 @@
+.paymentBox {
+  border:        1px solid var(--sand);
+  padding:       1.8rem;
+  margin-bottom: 2rem;
+  background:    var(--cream);
+
+  h3 {
+    font-family:   var(--font-cormorant), serif;
+    font-size:     1.2rem;
+    color:         var(--moss);
+    margin-bottom: 1.2rem;
+  }
+}
+
+.methods {
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 600px) { flex-direction: column; }
+}
+
+.methodBtn {
+  flex:           1;
+  padding:        0.7rem;
+  border:         1.5px solid var(--sand);
+  background:     #fff;
+  font-family:    var(--font-jost), sans-serif;
+  font-size:      0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          #888;
+  transition:     all 0.3s;
+
+  &.active {
+    border-color: var(--gold);
+    color:        var(--moss);
+    background:   rgba(184, 150, 90, 0.06);
+  }
+
+  &:hover { border-color: var(--gold); }
+}
+
+.cardFields { margin-bottom: 1rem; }
+
+.mobileField { margin-bottom: 1rem; }
+
+.otpNote {
+  font-size:  0.78rem;
+  color:      #aaa;
+  margin-top: 0.8rem;
+}
+
+.secure {
+  display:     flex;
+  align-items: center;
+  gap:         0.5rem;
+  font-size:   0.7rem;
+  color:       #aaa;
+  margin-top:  0.8rem;
+}
+
+.confirmBtn {
+  padding:        0.85rem 2.4rem;
+  background:     var(--green);
+  color:          var(--cream);
+  border:         none;
+  font-family:    var(--font-jost), sans-serif;
+  font-size:      0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition:     all 0.3s;
+
+  &:hover {
+    background: #2ecc71;
+    transform:  translateY(-2px);
+  }
+}
+
+.btnRow { margin-top: 2rem; }

@@ -1,0 +1,87 @@
+.card {
+  border:     2px solid var(--sand);
+  background: var(--cream);
+  transition: all 0.3s;
+  position:   relative;
+  overflow:   hidden;
+
+  &:hover {
+    border-color: var(--gold);
+    transform:    translateY(-3px);
+    box-shadow:   0 12px 36px rgba(184, 150, 90, 0.15);
+
+    img { transform: scale(1.07) !important; }
+  }
+
+  &.selected {
+    border-color: var(--gold);
+    background:   #fff;
+  }
+}
+
+.imgWrap {
+  height:   140px;
+  overflow: hidden;
+  position: relative;
+}
+
+.body {
+  padding: 1.2rem 1rem;
+}
+
+.tier {
+  font-size:      0.55rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color:          var(--gold);
+  margin-bottom:  0.3rem;
+}
+
+.name {
+  font-family:   var(--font-cormorant), serif;
+  font-size:     1.2rem;
+  color:         var(--moss);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-family:   var(--font-cormorant), serif;
+  font-size:     1.4rem;
+  color:         var(--moss);
+  margin-bottom: 0.6rem;
+
+  span {
+    font-size:   0.7rem;
+    color:       #aaa;
+    font-family: var(--font-jost), sans-serif;
+  }
+}
+
+.features {
+  display:   flex;
+  flex-wrap: wrap;
+  gap:       0.3rem;
+}
+
+.feat {
+  font-size:      0.58rem;
+  padding:        0.15rem 0.4rem;
+  background:     var(--mist);
+  color:          var(--moss);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.check {
+  position:        absolute;
+  top:             0.8rem;
+  right:           0.8rem;
+  width:           24px;
+  height:          24px;
+  background:      var(--gold);
+  border-radius:   50%;
+  display:         grid;
+  place-items:     center;
+  color:           #fff;
+  font-size:       0.72rem;
+}

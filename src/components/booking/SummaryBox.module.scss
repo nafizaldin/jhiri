@@ -1,0 +1,39 @@
+.summaryBox {
+  background:    var(--cream);
+  border:        1px solid var(--sand);
+  padding:       1.8rem;
+  margin-bottom: 2rem;
+}
+
+.summaryTitle {
+  font-size:      0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color:          var(--gold);
+  margin-bottom:  0.8rem;
+}
+
+.summaryRow {
+  display:         flex;
+  justify-content: space-between;
+  font-size:       0.85rem;
+  color:           #666;
+  padding:         0.5rem 0;
+  border-bottom:   1px solid var(--sand);
+
+  &:last-child { border: none; }
+}
+
+.totalRow {
+  font-weight: 500;
+  color:       var(--moss);
+  font-size:   0.95rem;
+  padding-top: 0.8rem;
+}
+
+.greenVal { color: var(--green); }
+
+.totalVal {
+  font-family: var(--font-cormorant), serif;
+  font-size:   1.4rem;
+}

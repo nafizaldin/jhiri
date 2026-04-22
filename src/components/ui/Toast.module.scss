@@ -1,0 +1,20 @@
+.toast {
+  position:    fixed;
+  bottom:      2rem;
+  right:       2rem;
+  z-index:     900;
+  padding:     1rem 1.5rem;
+  font-size:   0.82rem;
+  max-width:   300px;
+  box-shadow:  0 8px 30px rgba(0, 0, 0, 0.3);
+  transform:   translateX(calc(100% + 2rem));
+  transition:  transform 0.4s ease;
+  background:  var(--moss);
+  color:       var(--cream);
+
+  &.show { transform: translateX(0); }
+}
+
+.error   { background: var(--red);   }
+.success { background: var(--green); }
+.default { background: var(--moss);  }

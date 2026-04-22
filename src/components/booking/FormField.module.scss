@@ -1,0 +1,25 @@
+.field {
+  label {
+    display:        block;
+    font-size:      0.63rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color:          #aaa;
+    margin-bottom:  0.5rem;
+  }
+
+  input, select {
+    width:       100%;
+    padding:     0.78rem 0.9rem;
+    border:      1.5px solid var(--sand);
+    background:  var(--cream);
+    font-family: var(--font-jost), sans-serif;
+    font-size:   0.85rem;
+    color:       var(--char);
+    outline:     none;
+    transition:  border-color 0.3s;
+    appearance:  none;
+
+    &:focus { border-color: var(--gold); }
+  }
+}

@@ -1,0 +1,139 @@
+.section {
+  background: var(--moss);
+  padding:    6rem 4rem;
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  @media (max-width: 960px) { padding: 4rem 2rem; }
+}
+
+.header {
+  text-align:    center;
+  margin-bottom: 4rem;
+
+  p { color: var(--mist); font-size: 0.88rem; margin-top: 1rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+}
+
+.labelLight { color: var(--lgold) !important; }
+
+.headingLight {
+  color: var(--cream) !important;
+  em    { color: var(--lgold) !important; }
+}
+
+.grid { gap: 3px; }
+
+.card {
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    img { transform: scale(1.06) !important; }
+
+    .btns {
+      opacity:   1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.scene {
+  aspect-ratio: 3 / 4;
+  position:     relative;
+  overflow:     hidden;
+}
+
+.cardOverlay {
+  position:   absolute;
+  inset:      0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.25) 50%, transparent 100%);
+}
+
+.body {
+  position: absolute;
+  bottom:   0;
+  left:     0;
+  right:    0;
+  padding:  2rem 1.8rem;
+  z-index:  2;
+}
+
+.tier {
+  font-size:      0.58rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color:          var(--lgold);
+  margin-bottom:  0.4rem;
+}
+
+.name {
+  font-family:   var(--font-cormorant), serif;
+  font-size:     1.6rem;
+  font-weight:   300;
+  color:         #fff;
+  margin-bottom: 0.6rem;
+}
+
+.priceRow {
+  display:     flex;
+  align-items: baseline;
+  gap:         0.3rem;
+}
+
+.cur  { font-size: 0.72rem; color: var(--lgold); }
+.amt  { font-family: var(--font-cormorant), serif; font-size: 1.9rem; font-weight: 300; color: #fff; }
+.per  { font-size: 0.68rem; color: rgba(255, 255, 255, 0.55); }
+
+.tags {
+  display:    flex;
+  gap:        0.5rem;
+  margin-top: 0.7rem;
+  flex-wrap:  wrap;
+}
+
+.tag {
+  font-size:      0.58rem;
+  letter-spacing: 0.1em;
+  padding:        0.2rem 0.55rem;
+  border:         1px solid rgba(255, 255, 255, 0.2);
+  color:          rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+}
+
+.btns {
+  display:    flex;
+  gap:        0.5rem;
+  margin-top: 1rem;
+  opacity:    0;
+  transform:  translateY(10px);
+  transition: all 0.3s;
+}
+
+.viewBtn, .bookBtn {
+  flex:           1;
+  padding:        0.55rem;
+  font-family:    var(--font-jost), sans-serif;
+  font-size:      0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border:         none;
+  transition:     all 0.3s;
+}
+
+.viewBtn {
+  background: rgba(255, 255, 255, 0.12);
+  color:      #fff;
+  border:     1px solid rgba(255, 255, 255, 0.25);
+
+  &:hover { background: rgba(255, 255, 255, 0.22); }
+}
+
+.bookBtn {
+  background: var(--gold);
+  color:      var(--cream);
+
+  &:hover { background: var(--lgold); }
+}
