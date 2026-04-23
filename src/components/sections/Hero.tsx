@@ -51,7 +51,9 @@ export default function Hero() {
         /> */}
       </div>
 
+
       <div className={styles.overlay} />
+
 
       {/* Mist layers */}
       <div className={styles.mist} />
