@@ -8,12 +8,23 @@
 }
 
 .parallax {
-  position:    absolute;
-  inset:       0;
-  will-change: transform;
+  // position:    absolute;
+  // inset:       0;
+  // will-change: transform;
 
   /* Slightly oversized so parallax doesn't expose edges */
-  > span { top: -5% !important; height: 110% !important; }
+  // > span { top: -5% !important; height: 110% !important; }
+
+  background-image: url("https://picsum.photos/seed/jhiri-hero/1920/1080");
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  inset: 0;
+  will-change: transform;
 }
 
 .overlay {

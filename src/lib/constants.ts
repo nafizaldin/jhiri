@@ -21,7 +21,7 @@ export const ROOMS: Room[] = [
       "Private en-suite bathroom",
     ],
     tags: ["Garden View", "WiFi", "Breakfast"],
-    image: "https://picsum.photos/seed/jhiri-std/800/600",
+    image: "/standard-delux-room.jpg",
   },
   {
     id: "junior",
@@ -43,7 +43,7 @@ export const ROOMS: Room[] = [
       "Dedicated check-in & checkout",
     ],
     tags: ["Lake View", "Living Area", "Pool Access"],
-    image: "https://picsum.photos/seed/jhiri-junior/800/600",
+    image: "/juior-suite-junior-suite.png",
   },
   {
     id: "presidency",
@@ -65,7 +65,7 @@ export const ROOMS: Room[] = [
       "Complimentary spa treatment",
     ],
     tags: ["Panoramic View", "Butler", "Private Dining"],
-    image: "https://picsum.photos/seed/jhiri-pres/800/600",
+    image: "/pres-suite.jpg",
   },
 ];
 
@@ -109,10 +109,10 @@ export const AMENITIES: Amenity[] = [
 ];
 
 export const AMENITY_PHOTOS: AmenityPhoto[] = [
-  { label: "Fine Dining", image: "https://picsum.photos/seed/jhiri-dining/600/440" },
-  { label: "Swimming Pool", image: "https://picsum.photos/seed/jhiri-pool/600/440" },
-  { label: "Conference Room", image: "https://picsum.photos/seed/jhiri-conf/600/440" },
-  { label: "Kids Play Zone", image: "https://picsum.photos/seed/jhiri-kids/600/440" },
+  { label: "Fine Dining", image: "/fine-dining.jpg" },
+  { label: "Swimming Pool", image: "/swimming-pool.jpg" },
+  { label: "Conference Room", image: "/conference-room.jpg" },
+  { label: "Kids Play Zone", image: "/kids-play-zone.jpg" },
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
@@ -124,12 +124,12 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 1,
     caption: "Luxury Rooms & Suites",
-    image: "https://picsum.photos/seed/jhiri-gallery2/800/860",
+    image: "/luxury-rooms-and-suits.jpg",
   },
   {
     id: 2,
     caption: "Swimming Pool at Night",
-    image: "https://picsum.photos/seed/jhiri-gallery3/800/860",
+    image: "/swimming-pool-relaxing-night.jpg",
   },
 ];
 

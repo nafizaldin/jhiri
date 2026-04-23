@@ -23,6 +23,7 @@ export default function RoomCard({ room, selected, onSelect }: RoomCardProps) {
         <Image
           src={room.image}
           alt={room.name}
+          priority
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           style={{ objectFit: "cover", transition: "transform 0.5s" }}

@@ -41,14 +41,14 @@ export default function Hero() {
     <section className={styles.hero} id="home">
       {/* Background */}
       <div ref={parallaxRef} className={styles.parallax}>
-        <Image
+        {/* <Image
           src="https://picsum.photos/seed/jhiri-hero/1920/1080"
           alt="Jhiri Resort — Tea Gardens of Sreemangal at dusk"
           fill
           priority
           sizes="100vw"
           style={{ objectFit: "cover" }}
-        />
+        /> */}
       </div>
 
       <div className={styles.overlay} />
