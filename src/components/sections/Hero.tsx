@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import Button from "@/components/ui/Button";
 import styles from "./Hero.module.scss";

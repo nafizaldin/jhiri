@@ -67,7 +67,7 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.brand}>
           <a href="#">Jhiri <span>Resort</span></a>
-          <p>A sanctuary of stillness in the heart of Sreemangal's tea country. Where nature and luxury meet in quiet harmony.</p>
+          <p>A sanctuary of stillness in the heart of Sreemangal&apos;s tea country. Where nature and luxury meet in quiet harmony.</p>
           <div className={styles.newsletter}>
             <p>Subscribe for exclusive offers:</p>
             <form className={styles.nlForm} onSubmit={handleSubscribe}>

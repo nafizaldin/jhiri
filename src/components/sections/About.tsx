@@ -72,7 +72,7 @@ export default function About() {
           </h2>
           <div className={styles.divider} />
           <p className={styles.para}>
-            Named after the soft rivulets that weave through the hills of Sreemangal, Jhiri Resort is a sanctuary where nature's quiet rhythm becomes your daily companion. Surrounded by emerald tea gardens and ancient forest, we offer a rare escape from the ordinary.
+            Named after the soft rivulets that weave through the hills of Sreemangal, Jhiri Resort is a sanctuary where nature&apos;s quiet rhythm becomes your daily companion. Surrounded by emerald tea gardens and ancient forest, we offer a rare escape from the ordinary.
           </p>
           <p className={styles.para}>
             Every corner of Jhiri is thoughtfully crafted to dissolve the boundary between indoors and the lush landscape beyond — where mornings begin with birdsong and evenings close with the scent of rain on earth.

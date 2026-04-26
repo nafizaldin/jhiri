@@ -40,7 +40,7 @@ export default function Gallery() {
 
       {/* Quote divider */}
       <div className={styles.quote}>
-        <span className={styles.qMark}>"</span>
+        <span className={styles.qMark}>&ldquo;</span>
         <p className={styles.qText}>
           Sreemangal is where the earth breathes slowly.<br />
           Jhiri invites you to breathe with it.

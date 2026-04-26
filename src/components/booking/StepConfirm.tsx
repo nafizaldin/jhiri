@@ -1,5 +1,5 @@
 import { ROOMS } from "@/lib/constants";
-import { formatDate, formatCurrency } from "@/lib/utils";
+import { formatDate } from "@/lib/utils";
 import type { BookingData } from "@/types";
 import Button from "@/components/ui/Button";
 import styles from "./StepConfirm.module.scss";

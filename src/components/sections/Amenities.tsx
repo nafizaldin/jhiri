@@ -19,7 +19,7 @@ export default function Amenities() {
             Curated <em>Amenities</em><br />for the Discerning Guest
           </h2>
           <p className={styles.desc}>
-            From sumptuous dining to energizing recreation, every facility at Jhiri is designed to complement the resort's natural surroundings while delivering the comforts of modern luxury.
+            From sumptuous dining to energizing recreation, every facility at Jhiri is designed to complement the resort&apos;s natural surroundings while delivering the comforts of modern luxury.
           </p>
         </div>
 

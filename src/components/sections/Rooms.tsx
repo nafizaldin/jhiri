@@ -27,7 +27,7 @@ export default function Rooms({ onQuickBook }: RoomsProps) {
             Rooms &amp; <em>Suites</em>
           </h2>
           <p>
-            Three distinct tiers of comfort — each immersed in Sreemangal's breathtaking landscape.
+            Three distinct tiers of comfort — each immersed in Sreemangal&apos;s breathtaking landscape.
           </p>
         </div>
 
